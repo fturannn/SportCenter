@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Part*/
+header {
+    background-image: url(/Assets/hero-man.jpg);
+    background-size: cover;
+}
+
+.nav-style {
+    width: 100%;
+    height: 72px;
+    background-color: #355592;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+
+.container-top {
+    margin: auto;
+    width: 60%;
+    padding-top: 144px;
+}
+
+.navbar {
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    margin-left: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav-btn {
+    border: none;
+    padding: 3px 8px;
+    border-radius: 3px;
+    background-color: #FE9B01;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #fe9d01d8;
+}
+
+.fa-list {
+    font-size: 24px;
+    padding: 4px;
+    color: aliceblue;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container-top h3 {
+    display: inline-block;
+    color: aliceblue;
+    background-color: #355592;
+    padding: 4px 10px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 5px;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 72px;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 5px;
+}
+
+.container-top p {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 2px black;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+#signup-btn {
+    padding: 8px 24px;
+    background-color: #355592;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 16px;
+    margin-bottom: 54px;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+#signup-btn:hover {
+    background-color: #4d7ed9;
+}
+
+#details-btn {
+    padding: 8px 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid 1px aliceblue;
+    border-radius: 5px;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#details-btn:hover {
+    background-color: black;
+}
+
+/* Card Section */
+
+#card {
+    background-color: #F1F8FF;
+}
+
+.container-card {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    padding-top: 8px;
+    padding-bottom: 16px;
+    margin: 15px 0px;
+    width: 35%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 36px;
+}
+
+.card-item h3 {
+    color: #355592;
+}
+
+.card-item p {
+    font-weight: bold;
+}
+
+/* Group Section */
+
+#classes {
+    position: relative;
+}
+
+.bg-shape {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 60%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%, 12.5% 50%);
+    background: #F6F6F6;
+}
+
+.classes-container {
+    margin: auto;
+    width: 60%;
+}
+
+.titles {
+    text-align: center;
+    padding-top: 54px;
+    color: #355592;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.line-item {
+    width: 75px;
+    border: solid 4px #FE9B01;
+    margin: auto;
+    border-radius: 100px;
+    margin-bottom: 32px;
+}
+
+.desc-p {
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.group-btn {
+    position: relative;
+    font-weight: bold;
+    background-color: #355592;
+    color: aliceblue;
+    padding: 8px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.selection {
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #FE9B01;
+    transition: 0.5s;
+}
+
+.group-content {
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.class-img {
+    width: 50%;
+}
+
+.desc h3 {
+    font-size: 24px;
+}
+
+.desc p {
+    font-size: 16px;
+    margin: 24px 0px;
+    line-height: 24px;
+}
+
+/* BMI Section */
+
+.bmi {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    gap: 15%;
+    padding-top: 54px;
+    padding-bottom: 54px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bmi-content {
+    width: 50%;
+}
+
+.bmi-content h2 {
+    color: #355592;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.bmi-content p {
+    margin-top: 24px;
+}
+
+.calculator {
+    margin-top: 24px;
+}
+
+.bmi-index {
+    position: relative;
+}
+
+.bmi-index h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bmi-img {
+    width: 100%;
+}
+
+.arrow-up {
+    position: absolute;
+    left: 7%;
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 20px solid #FE9B01;
+    transition: 0.5s;
+}
+
+/* Trainers Section */
+
+.trainer-container {
+    background-color: #F1F8FF;
+}
+
+.trainers-box {
+    width: 60%;
+    gap: 5%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    z-index: 1;
+}
+
+.trainer-img {
+    width: 100%;
+    border: solid 1px #FE9B01;
+    border-radius: 5px;
+}
+
+/* Purchase Section */
+
+.purchase-container {
+    width: 70%;
+    margin: auto;
+}
+
+.purchase-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 54px;
+}
+
+.purchase-card {
+    position: relative;
+    width: 24%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: width 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.purchase-card:hover {
+    width: 26%;
+}
+
+.purchase-img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.purchase-card p {
+    text-align: center;
+
+    font-weight: 500;
+}
+
+.price, .add-to-card {
+    font-size: 12px;
+}
+
+.add-to-card {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.fa-cart-shopping {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+}
+
+@media (max-width: 576px) {
+    .card-item {
+        width: 100%;
+    }
+
+    #signup-btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    #details-btn {
+        display: block;
+        width: 100%;
+    }
+
+    .container-top {
+        width: 90%;
+        padding-bottom: 54px;
+    }
+
+    .card-item:first-child {
+        margin-top: 25px;
+    }
+    
+    .card-item:last-child {
+        margin-bottom: 25px;
+    }
+
+    .card-item {
+        margin: 0px;
+    }
+
+    .group-content {
+        display: block;
+    }
+
+    .class-img {
+        width: 100%;
+    }
+
+    .bmi {
+        display: block;
+    }
+
+    .bmi-content {
+        width: 100%;
+    }
+
+    .bmi-index {
+        margin-top: 54px;
+    }
+
+    .bmi-img {
+        width: 100%;
+    }
+
+    .trainers-box {
+        display: block;
+    }
+
+    .trainer-img {
+        margin-top: 20px;
+    }
+
+    .purchase-box {
+        display: block;
+        width: 100%;
+    }
+
+    .purchase-card {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .purchase-card:hover {
+        width: 100%;
+    }
+}
+
