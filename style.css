@@ -150,7 +150,7 @@ h1 {
     padding-top: 8px;
     padding-bottom: 16px;
     margin: 15px 0px;
-    width: 35%;
+    width: 13rem;
     background-color: #fff;
     text-align: center;
     line-height: 36px;
@@ -323,7 +323,7 @@ h1 {
 }
 
 .trainers-box {
-    width: 60%;
+    width: 70%;
     gap: 5%;
     margin: auto;
     display: flex;
@@ -341,7 +341,7 @@ h1 {
 /* Purchase Section */
 
 .purchase-container {
-    width: 70%;
+    width: 60%;
     margin: auto;
 }
 
@@ -391,6 +391,193 @@ h1 {
     bottom: 12px;
     left: 12px;
 }
+
+/* Client Review Section */
+
+#review {
+    background-color: #F1F8FF;
+}
+
+.review-container {
+    width: 60%;
+    margin: auto;
+}
+
+.client-reviews {
+    display: flex;
+    gap: 15%;
+    padding-bottom: 96px;
+}
+
+.client-info {
+    display: flex;
+    gap: 6%;
+}
+
+.client-info img {
+    border-radius: 50%;
+    width: 3rem;
+}
+
+.name p:first-child {
+    font-weight: 500;
+}
+
+.name p:last-child {
+    font-size: 12px;
+}
+
+.client-comment {
+    margin-top: 3%;
+    position: relative;
+}
+
+.client-comment p{
+    background-color: #355592;
+    color: aliceblue;
+    font-size: 12px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.client-comment::after {
+    position: absolute;
+    content: "";
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    background-color: #8096BE;
+    width: 2rem;
+    height: 2rem;
+    top: 100%;
+    left: 0;
+}
+
+.client-comment::before {
+    position: absolute;
+    content: "";
+    background-color: #8096BE;
+    width: 2rem;
+    height: 2rem;
+    top: 100%;
+    right: 0%;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+
+/* Contact Section */
+
+.contact-container {
+    width: 60%;
+    margin: auto;
+}
+
+.contact-content {
+    display: flex;
+    gap: 7%;
+    padding-bottom: 124px;
+}
+
+.contact-types {
+    display: flex;
+    gap: 10%;
+}
+
+.contact-info {
+    width: 50%;
+}
+
+.contact-map {
+    width: 50%;
+}
+
+.contact-info input {
+    display: block;
+    margin-top: 5%;
+    width: 100%;
+    height: 1.7rem;
+    border: none;
+    background-color: #F1F8FF;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+textarea {
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border: none;
+    background-color: #F1F8FF;
+    border-radius: 5px;
+}
+
+.contact-info textarea {
+    margin-top: 5%;
+    width: 100%;
+    height: 50%;
+}
+
+.map {
+    width: 100%;
+    height: 125%;
+}
+
+footer {
+    background-color: #355592;
+    padding-bottom: 28px;
+}
+
+.footer-container {
+    width: 60%;
+    margin: auto;
+}
+
+.footer-container img {
+    width: 25%;
+}
+
+.footer-container p {
+    color: aliceblue;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.info-and-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+.information h3 {
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.information a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.helpful-links h3 {
+    font-weight: 500;
+    color: aliceblue;
+}
+
+.helpful-links a {
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
 
 @media (max-width: 576px) {
     .card-item {
@@ -469,6 +656,35 @@ h1 {
     }
 
     .purchase-card:hover {
+        width: 100%;
+    }
+
+    .review-container {
+        width: 90%;
+    }
+
+    .client-reviews {
+        display: block;
+    }
+
+    .client {
+        width: 100%;
+        margin-top: 54px;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+
+    .contact-content {
+        display: block;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-map {
         width: 100%;
     }
 }

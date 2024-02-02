@@ -57,8 +57,8 @@ const navs = document.querySelector(".navs");
       navs.innerHTML = `<a href="#" class="nav-item">Home</a>
         <a href="#classes" class="nav-item">Classes</a>
         <a href="#trainers" class="nav-item">Trainer</a>
-        <a href="#" class="nav-item">Review</a>
-        <a href="#" class="nav-item">Contact</a>
+        <a href="#review" class="nav-item">Review</a>
+        <a href="#contact" class="nav-item">Contact</a>
         <button class="nav-item nav-btn">JOIN US</button>`;
     } else {
       navs.innerHTML = `<button class="dropdown-btn"><i class="fa-solid fa-list"></i></button>`;
