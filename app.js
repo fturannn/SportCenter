@@ -47,21 +47,14 @@ document.addEventListener("scroll", () => {
   }
 })
 
-// Navbar sayfa linklerinin dropdown butona dönüşmesi
+// Navbar butonu menüsünün scroll ve resize durumlarında kapanması
 
-const navs = document.querySelector(".navs");
+const checkbox = document.querySelector(".menu-btn");
 
-["resize", "DOMContentLoaded"].forEach((event) =>
+["resize", "scroll"].forEach((event) =>
   window.addEventListener(event, () => {
-    if (window.innerWidth > 1300) {
-      navs.innerHTML = `<a href="#" class="nav-item">Home</a>
-        <a href="#classes" class="nav-item">Classes</a>
-        <a href="#trainers" class="nav-item">Trainer</a>
-        <a href="#review" class="nav-item">Review</a>
-        <a href="#contact" class="nav-item">Contact</a>
-        <button class="nav-item nav-btn">JOIN US</button>`;
-    } else {
-      navs.innerHTML = `<button class="dropdown-btn"><i class="fa-solid fa-list"></i></button>`;
+    if (checkbox.checked == true) {
+      checkbox.checked = false;
     }
   })
 );
@@ -134,4 +127,19 @@ function showMenu(e, groupContent) {
   img.alt = `${e.category}`;
   groupContent.append(div);
   groupContent.append(img);
+}
+
+const imgBox = document.querySelectorAll(".img-box");
+const trainerFlag = document.querySelectorAll(".trainer-flag");
+const trainerName = document.querySelectorAll(".trainer-name");
+
+for(let i = 0; i < imgBox.length; i++) {
+  imgBox[i].addEventListener ("mouseover", () => {
+    trainerFlag[i].classList.remove("hidden");
+    trainerName[i].classList.remove("hidden");
+  })
+  imgBox[i].addEventListener ("mouseout", () => {
+    trainerFlag[i].classList.add("hidden");
+    trainerName[i].classList.add("hidden");
+  })
 }

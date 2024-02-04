@@ -15,10 +15,21 @@
   </head>
   <body>
     <div class="nav-container">
-        <nav class="navbar">
-            <img src="/Assets/logo.png" alt="Sport Center Logo" />
-            <div class="navs"></div>
-          </nav>
+      <nav class="navbar">
+        <a href="#"><img src="/Assets/logo.png" alt="Sport Center Logo" /></a>
+        <label for="menu-btn" class="menu-icon"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <input type="checkbox" id="menu-btn" class="menu-btn" />
+        <div class="navs">
+          <a href="#" class="nav-item">Home</a>
+          <a href="#classes" class="nav-item">Classes</a>
+          <a href="#trainers" class="nav-item">Trainer</a>
+          <a href="#review" class="nav-item">Review</a>
+          <a href="#contact" class="nav-item">Contact</a>
+          <button class="nav-item nav-btn">JOIN US</button>
+        </div>
+      </nav>
     </div>
     <header>
       <div class="container-top">
@@ -147,125 +158,196 @@
           labore?
         </p>
         <div class="trainers-box">
-            <div class="img-box">
-                <img src="/Assets/trainer1.jpg" alt="Trainer 1" class="trainer-img" />
-            </div>
-            <div class="img-box">
-                <img src="/Assets/trainer2.jpg" alt="Trainer 1" class="trainer-img" />
-            </div>
-            <div class="img-box">
-                <img src="/Assets/trainer3.jpg" alt="Trainer 1" class="trainer-img" />
-            </div>
+          <div class="img-box">
+            <div class="before"></div>
+            <img
+              src="/Assets/trainer1.jpg"
+              alt="Trainer 1"
+              class="trainer-img"
+            />
+            <div class="after"></div>
+            <div class="trainer-flag hidden"></div>
+            <p class="trainer-name hidden">Ayşe</p>
+          </div>
+          <div class="img-box">
+            <div class="before"></div>
+            <img
+              src="/Assets/trainer2.jpg"
+              alt="Trainer 1"
+              class="trainer-img"
+            />
+            <div class="after"></div>
+            <div class="trainer-flag hidden"></div>
+            <p class="trainer-name hidden">Ersin Mutlu</p>
+          </div>
+          <div class="img-box">
+            <div class="before"></div>
+            <img
+              src="/Assets/trainer3.jpg"
+              alt="Trainer 1"
+              class="trainer-img"
+            />
+            <div class="after"></div>
+            <div class="trainer-flag hidden"></div>
+            <p class="trainer-name hidden">Fatma</p>
+          </div>
         </div>
       </div>
     </section>
     <section class="purchase">
-        <div class="purchase-container">
-          <h2 class="titles">PURCHASE FROM US</h2>
-          <div class="line-item"></div>
-          <p class="desc-p">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
-            labore?
-          </p>
-          <div class="purchase-box">
-            <div class="purchase-card">
-                <img src="/Assets/purchase1.jpg" alt="Kettlebell 5 kg" class="purchase-img" />
-                <p>Kettlebell / 5kg</p>
-                <p class="price"><s>89,99$</s> / 59,99$</p>
-                <p class="add-to-card">Add To Card</p>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-            <div class="purchase-card">
-                <img src="/Assets/purchase2.jpg" alt="Treadmill" class="purchase-img" />
-                <p>Treadmill</p>
-                <p class="price"><s>899,99$</s> / 599,99$</p>
-                <p class="add-to-card">Add To Card</p>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-            <div class="purchase-card">
-                <img src="/Assets/purchase3.jpg" alt="Adjustable Dumbbell" class="purchase-img" />
-                <p>Adjustable Dumbbell</p>
-                <p class="price"><s>89,99$</s> / 59,99$</p>
-                <p class="add-to-card">Add To Card</p>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-            <div class="purchase-card">
-                <img src="/Assets/purchase4.jpg" alt="Kettlebell 3 kg" class="purchase-img" />
-                <p>Kettlebell / 3kg</p>
-                <p class="price"><s>89,99</s> / 59,99$</p>
-                <p class="add-to-card">Add To Card</p>
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
+      <div class="purchase-container">
+        <h2 class="titles">PURCHASE FROM US</h2>
+        <div class="line-item"></div>
+        <p class="desc-p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
+          labore?
+        </p>
+        <div class="purchase-box">
+          <div class="purchase-card">
+            <img
+              src="/Assets/purchase1.jpg"
+              alt="Kettlebell 5 kg"
+              class="purchase-img"
+            />
+            <p>Kettlebell / 5kg</p>
+            <p class="price"><s>89,99$</s> / 59,99$</p>
+            <p class="add-to-card">Add To Card</p>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="purchase-card">
+            <img
+              src="/Assets/purchase2.jpg"
+              alt="Treadmill"
+              class="purchase-img"
+            />
+            <p>Treadmill</p>
+            <p class="price"><s>899,99$</s> / 599,99$</p>
+            <p class="add-to-card">Add To Card</p>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="purchase-card">
+            <img
+              src="/Assets/purchase3.jpg"
+              alt="Adjustable Dumbbell"
+              class="purchase-img"
+            />
+            <p>Adjustable Dumbbell</p>
+            <p class="price"><s>89,99$</s> / 59,99$</p>
+            <p class="add-to-card">Add To Card</p>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="purchase-card">
+            <img
+              src="/Assets/purchase4.jpg"
+              alt="Kettlebell 3 kg"
+              class="purchase-img"
+            />
+            <p>Kettlebell / 3kg</p>
+            <p class="price"><s>89,99</s> / 59,99$</p>
+            <p class="add-to-card">Add To Card</p>
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
         </div>
+      </div>
     </section>
     <section id="review">
       <div class="review-container">
         <h2 class="titles">REVIEW CLIENT</h2>
         <div class="line-item"></div>
-        <p class="desc-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
-          labore?</p>
-          <div class="client-reviews">
-            <div class="client">
-              <div class="client-info">
-                <img src="/Assets/client1.jpg" alt="Client 1">
-                <div class="name">
-                  <p>Diet Expert</p>
-                  <p>CFO</p>
-                </div>
-              </div>
-              <div class="client-comment">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum libero neque atque sit eligendi beatae minus, pariatur numquam facilis aspernatur odit facere laboriosam recusandae ad. Laborum fuga ducimus ratione odio?</p>
+        <p class="desc-p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
+          labore?
+        </p>
+        <div class="client-reviews">
+          <div class="client">
+            <div class="client-info">
+              <img src="/Assets/client1.jpg" alt="Client 1" />
+              <div class="name">
+                <p>Diet Expert</p>
+                <p>CFO</p>
               </div>
             </div>
-            <div class="client">
-              <div class="client-info">
-                <img src="/Assets/client2.jpg" alt="Client 2">
-                <div class="name">
-                  <p>Cardio Trainer</p>
-                  <p>CEO</p>
-                </div>
-              </div>
-              <div class="client-comment">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum libero neque atque sit eligendi beatae minus, pariatur numquam facilis aspernatur odit facere laboriosam recusandae ad. Laborum fuga ducimus ratione odio?</p>
-              </div>
+            <div class="client-comment">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                libero neque atque sit eligendi beatae minus, pariatur numquam
+                facilis aspernatur odit facere laboriosam recusandae ad. Laborum
+                fuga ducimus ratione odio?
+              </p>
             </div>
           </div>
+          <div class="client">
+            <div class="client-info">
+              <img src="/Assets/client2.jpg" alt="Client 2" />
+              <div class="name">
+                <p>Cardio Trainer</p>
+                <p>CEO</p>
+              </div>
+            </div>
+            <div class="client-comment">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                libero neque atque sit eligendi beatae minus, pariatur numquam
+                facilis aspernatur odit facere laboriosam recusandae ad. Laborum
+                fuga ducimus ratione odio?
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="contact">
       <div class="contact-container">
         <h2 class="titles">CONTACT US</h2>
         <div class="line-item"></div>
-        <p class="desc-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
-          labore?</p>
-          <div class="contact-content">
-            <div class="contact-info">
-              <div class="contact-types">
-                <div class="mobile-number">
-                  <h4>Mobile Number</h4>
-                  <p>+135 773 321 44 42</p>
-                </div>
-                <div class="email-address">
-                  <h4>Email Adress</h4>
-                  <p>demo@demo.com</p>
-                </div>
+        <p class="desc-p">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam,
+          labore?
+        </p>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-types">
+              <div class="mobile-number">
+                <h4>Mobile Number</h4>
+                <p>+135 773 321 44 42</p>
               </div>
-              <h3>Make An Appointment</h3>
-              <input type="text" id="name" placeholder="Your Name">
-              <input type="text" id="email" placeholder="Your Email">
-              <textarea name="message" id="message" placeholder="Your Message"></textarea>
+              <div class="email-address">
+                <h4>Email Adress</h4>
+                <p>demo@demo.com</p>
+              </div>
             </div>
-            <div class="contact-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385399.3519826978!2d28.682534897266322!3d41.00485195720003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1sen!2str!4v1706817875990!5m2!1sen!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-            </div>
+            <h3>Make An Appointment</h3>
+            <input type="text" id="name" placeholder="Your Name" />
+            <input type="text" id="email" placeholder="Your Email" />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+            ></textarea>
           </div>
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d385399.3519826978!2d28.682534897266322!3d41.00485195720003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2zxLBzdGFuYnVs!5e0!3m2!1sen!2str!4v1706817875990!5m2!1sen!2str"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="map"
+            ></iframe>
+          </div>
+        </div>
       </div>
     </section>
     <footer>
       <div class="footer-container">
-        <img src="/Assets/logo.png" alt="Logo">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a incidunt voluptatum voluptates officia sequi dicta totam perspiciatis? Odio quidem labore unde illum cupiditate, rerum eligendi deleniti debitis dolorem adipisci? Quia distinctio at magni a! Unde minima ex eaque maxime?</p>
+        <img src="/Assets/logo.png" alt="Logo" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a
+          incidunt voluptatum voluptates officia sequi dicta totam perspiciatis?
+          Odio quidem labore unde illum cupiditate, rerum eligendi deleniti
+          debitis dolorem adipisci? Quia distinctio at magni a! Unde minima ex
+          eaque maxime?
+        </p>
         <div class="info-and-links">
           <div class="information">
             <h3>Information</h3>
