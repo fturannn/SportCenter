@@ -59,7 +59,7 @@ const checkbox = document.querySelector(".menu-btn");
   })
 );
 
-// Classes bölümündeki butonların tıklanmasına bağlı olarak içeriğin değiştirilmesi
+// Kriter 11: Classes bölümündeki butonların tıklanmasına bağlı olarak içeriğin değiştirilmesi
 
 const groupButton = document.querySelectorAll(".group-btn");
 const child = document.querySelectorAll(".group-btn div");
@@ -87,7 +87,7 @@ for(let i = 0; i < groupButton.length; i++) {
   })
 }
 
-// BMI hesaplanması ve göstergenin hareketi
+// Kriter 8: BMI hesaplanması ve göstergenin hareketi
 
 const arrowUp = document.querySelector(".arrow-up");
 const height = document.querySelector("#height");
@@ -128,6 +128,8 @@ function showMenu(e, groupContent) {
   groupContent.append(div);
   groupContent.append(img);
 }
+
+// Kriter 12: Our Best Trainers alanı için istenen "hover" 
 
 const imgBox = document.querySelectorAll(".img-box");
 const trainerFlag = document.querySelectorAll(".trainer-flag");
